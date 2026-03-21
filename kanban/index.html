@@ -11,19 +11,30 @@
   </head>
   <body>
     <div class="container">
-      <h1>Simple Kanban Board</h1>
+      <h1>Kanban Board</h1>
+      <form>
+        <input
+          type="text"
+          name="newCardInput"
+          id="newCardInput"
+          placeholder="Clean Dishes..."
+        />
+        <button id="addNewCardBtn" type="submit" name="addNewCardBtn">
+          Add New Card
+        </button>
+      </form>
       <div class="board">
         <!-- List 1-->
         <div class="list" id="list1">
           <h2>To Do</h2>
-          <div class="card" draggable="true" id="'card1">Card 1</div>
-          <div class="card" draggable="true" id="'card2">Card 2</div>
+          <div class="card" draggable="true" id="card1">Card 1</div>
+          <div class="card" draggable="true" id="card2">Card 2</div>
         </div>
 
         <!-- List 2-->
         <div class="list" id="list2">
           <h2>In Progress</h2>
-          <div class="card" draggable="true" id="'card3">Practice Coding</div>
+          <div class="card" draggable="true" id="card3">Practice Coding</div>
         </div>
 
         <!-- List 3-->
