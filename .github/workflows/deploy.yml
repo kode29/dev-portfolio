@@ -1,0 +1,21 @@
+name: Deploy Dev Portfolio
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 216.219.94.111
+          username: kyle
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/vhosts/kylemperkins.com/httpdocs/development/dev-portfolio/
+            git pull origin main
