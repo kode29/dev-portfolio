@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kanban DnD</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Kanban Board</h1>
+      <div class="board">
+        <!-- List 1-->
+        <div class="list" id="list1">
+          <h2>To Do</h2>
+          <div class="card" draggable="true" id="'card1">Card 1</div>
+          <div class="card" draggable="true" id="'card2">Card 2</div>
+        </div>
+
+        <!-- List 2-->
+        <div class="list" id="list2">
+          <h2>In Progress</h2>
+          <div class="card" draggable="true" id="'card3">Practice Coding</div>
+        </div>
+
+        <!-- List 3-->
+        <div class="list" id="list3">
+          <h2>Done</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
