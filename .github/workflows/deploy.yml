@@ -17,5 +17,5 @@ jobs:
           username: kyle
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/vhosts/kylemperkins.com/httpdocs/development/dev-portfolio/
+            cd ${{ secrets.DEPLOY_PATH }}
             git pull origin main
