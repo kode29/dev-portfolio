@@ -85,6 +85,15 @@ function formatCurrency(number) {
   }).format(number);
 }
 
+function removeTransaction(id) {
+  // filter out the one we want to delete
+  transactions = transactions.filter((transaction) => transaction.id !== id);
+  localStorage.setItem("transactions", JSON.stringify(transactions));
+
+  updateTransactionList();
+  updateSummary();
+}
+
 // initial render
 updateTransactionList();
 updateSummary();
