@@ -68,7 +68,7 @@ const createCard = (text) => {
   return card;
 };
 
-const addCardToList = (listElement, text) => {
+const addCardToList = ({ listElement, text }) => {
   const card = createCard(text);
   listElement.appendChild(card);
 };
