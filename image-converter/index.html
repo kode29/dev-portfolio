@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>File Converter Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Overlay -->
+    <div id="dropOverlay">Drop files here</div>
+
+    <!-- Header Controls -->
+    <div class="toolbar">
+      <select id="conversionType">
+        <option value="pdf-jpg" selected>PDF → JPG</option>
+      </select>
+
+      <button id="downloadZipBtn">Download All ZIP</button>
+      <button id="clearBtn">Clear List</button>
+    </div>
+
+    <!-- Drop Area Message -->
+    <div class="drop-hint">Drag & drop files anywhere on the screen</div>
+
+    <!-- File List -->
+    <div id="fileList"></div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+    <!-- App -->
+    <script src="app.js"></script>
+  </body>
+</html>
